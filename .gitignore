@@ -3,10 +3,10 @@
 #################
 
 *.pydevproject
-.project
 .metadata
 bin/
 tmp/
+target/
 *.tmp
 *.bak
 *.swp
