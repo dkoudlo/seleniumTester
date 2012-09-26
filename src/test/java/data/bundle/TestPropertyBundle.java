@@ -121,19 +121,19 @@ public class TestPropertyBundle extends ResourceBundle{
 	
 	public static class Us extends TestPropertyBundle {
 		public Us() {
-			super("test_us.properties");
+			super("salon_us.properties");
 		}
 	}
 	
 	public static class Ca extends TestPropertyBundle {
 		public Ca() {
-			super("test_ca.properties");
+			super("salon_ca.properties");
 		}
 	}
 	
 	public static class Ru extends TestPropertyBundle {
 		public Ru() {
-			super("test_ru.properties");
+			super("salon_ru.properties");
 		}
 	}
 }
