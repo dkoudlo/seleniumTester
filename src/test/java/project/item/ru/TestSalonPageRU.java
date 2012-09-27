@@ -1,8 +1,8 @@
 package project.item.ru;
 
-import project.item.us.TestSalonPageUS;
+import project.item.generic.AbstractSalonPage;
 
-public class TestSalonPageRU extends TestSalonPageUS{
+public class TestSalonPageRU extends AbstractSalonPage{
 
 
 	

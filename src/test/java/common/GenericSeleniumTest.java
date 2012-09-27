@@ -25,10 +25,11 @@ public class GenericSeleniumTest {
 	@Rule
 	public GuiceBerryRule guiceBerry = new GuiceBerryRule(ProjectTestEnv.class);
 	
-//	@Inject 
-//	public Logger log;
-//	
-	@Inject WebDriver driver;
+	@Inject 
+	public Logger log;
+	
+	@Inject 
+	WebDriver driver;
 	
 //	@Rule 
 //	public TestName name = new TestName();

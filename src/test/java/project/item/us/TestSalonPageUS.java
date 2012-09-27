@@ -5,7 +5,7 @@ import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 
-import project.modules.PageFooterModule;
+import project.modules.PageHeaderModule;
 import project.modules.PageContentModule;
 
 import com.google.inject.Inject;
@@ -21,7 +21,7 @@ public class TestSalonPageUS extends GenericSeleniumTest{
 	WebDriver driver;
 	
 //	@Inject
-	PageFooterModule footer;
+	PageHeaderModule footer;
 	
 //	@Inject
 	PageContentModule header;

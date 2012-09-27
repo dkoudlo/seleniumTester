@@ -6,40 +6,37 @@ import static org.junit.Assert.fail;
 import org.openqa.selenium.WebDriver;
 
 import com.google.inject.Inject;
-import common.interfaces.IPageModule;
 
 import data.bundle.TestPropertyBundle;
 
-public class PageContentModule implements IPageModule{
+public class PageHeaderModule {
+	
 	@Inject
 	TestPropertyBundle properties;
 
 	@Inject
 	WebDriver driver;
 
-	public PageContentModule(WebDriver driver, TestPropertyBundle properties) {
+	public PageHeaderModule(WebDriver driver, TestPropertyBundle properties) {
 		this.driver = driver;
 		this.properties = properties;
 	}
 	
-	public PageContentModule goToPage(String url) {
-		System.out.println("Footer Header goToPageMethod(), url is" + url);
+	
+	public PageHeaderModule goToPage(String url){
+		System.out.println("Footer Module goToPageMethod(), url is" + url);
+
 		
+		assertEquals(url, url);
 		driver.get(url);
-		
-		assertEquals(url, url); //always pass
 		return this;
 	}
 	
-	public PageContentModule testHeaderText(){
-		System.out.println("Footer Header testFooterText()");
+	
+	public PageHeaderModule testFooterText(){
+		System.out.println("Footer Module testFooterText()");
 		fail("this test needs to be written");
 		return this;
 	}
 	
-	
 }
-
-
-
-
