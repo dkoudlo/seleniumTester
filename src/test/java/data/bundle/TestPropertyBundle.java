@@ -29,7 +29,7 @@ public class TestPropertyBundle extends ResourceBundle{
 	
 	Gson gson;
 	private static final String PATH_TO_CONFIG = "/data/",
-			BASE_PROPERTIES_FILE_NAME = "test_us.properties";
+			BASE_PROPERTIES_FILE_NAME = "test.properties";
 	
 	public TestPropertyBundle() {
 		this(BASE_PROPERTIES_FILE_NAME);
@@ -119,21 +119,37 @@ public class TestPropertyBundle extends ResourceBundle{
 		}
 	}
 	
-	public static class Us extends TestPropertyBundle {
-		public Us() {
-			super("salon_us.properties");
+	public static class Salon extends TestPropertyBundle {
+		public Salon() {
+			super("test_salon.properties");
 		}
 	}
 	
-	public static class Ca extends TestPropertyBundle {
-		public Ca() {
+	public static class SalonCa extends TestPropertyBundle {
+		public SalonCa() {
 			super("salon_ca.properties");
 		}
 	}
 	
-	public static class Ru extends TestPropertyBundle {
-		public Ru() {
+	public static class SalonRu extends TestPropertyBundle {
+		public SalonRu() {
 			super("salon_ru.properties");
 		}
 	}
+	
+	public static class SalonRu extends TestPropertyBundle {
+		public SalonRu() {
+			super("salon_ru.properties");
+		}
+	}
+	
+	public static class SalonRu extends TestPropertyBundle {
+		public SalonRu() {
+			super("salon_ru.properties");
+		}
+	}
+	
+	
+	
+	
 }

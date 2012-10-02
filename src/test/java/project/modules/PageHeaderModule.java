@@ -6,10 +6,11 @@ import static org.junit.Assert.fail;
 import org.openqa.selenium.WebDriver;
 
 import com.google.inject.Inject;
+import common.interfaces.IPageModule;
 
 import data.bundle.TestPropertyBundle;
 
-public class PageHeaderModule {
+public class PageHeaderModule implements IPageModule{
 	
 	@Inject
 	TestPropertyBundle properties;
@@ -24,7 +25,7 @@ public class PageHeaderModule {
 	
 	
 	public PageHeaderModule goToPage(String url){
-		System.out.println("Footer Module goToPageMethod(), url is" + url);
+		System.out.println("Header Module goToPage(), url is" + url);
 
 		
 		assertEquals(url, url);
@@ -33,8 +34,8 @@ public class PageHeaderModule {
 	}
 	
 	
-	public PageHeaderModule testFooterText(){
-		System.out.println("Footer Module testFooterText()");
+	public PageHeaderModule testHeaderText(){
+		System.out.println("Header Module testFooterText()");
 		fail("this test needs to be written");
 		return this;
 	}

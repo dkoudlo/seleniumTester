@@ -31,8 +31,8 @@ public class PageContentModule implements IPageModule{
 		return this;
 	}
 	
-	public PageContentModule testHeaderText(){
-		System.out.println("Footer Header testFooterText()");
+	public PageContentModule verifyFirstParagraph(){
+		System.out.println("Testing First Paragraph Header verifyFirstParagraph()");
 		fail("this test needs to be written");
 		return this;
 	}
