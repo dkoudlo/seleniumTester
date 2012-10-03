@@ -51,36 +51,6 @@
 			<artifactId>selenium-server</artifactId>
 			<version>2.25.0</version>
 		</dependency>
-		<dependency>
-			<groupId>seleniumTest</groupId>
-			<artifactId>aopalliance</artifactId>
-			<version>aopalliance</version>
-		</dependency>
-		<dependency>
-			<groupId>seleniumTest</groupId>
-			<artifactId>guava-r09</artifactId>
-			<version>guava-r09</version>
-		</dependency>
-		<dependency>
-			<groupId>seleniumTest</groupId>
-			<artifactId>guice</artifactId>
-			<version>3.0</version>
-		</dependency>
-		<dependency>
-			<groupId>seleniumTest</groupId>
-			<artifactId>guiceberry-snapshot</artifactId>
-			<version>guiceberry-snapshot</version>
-		</dependency>
-		<dependency>
-			<groupId>seleniumTest</groupId>
-			<artifactId>javax.inject</artifactId>
-			<version>javax.inject</version>
-		</dependency>
-		<dependency>
-			<groupId>seleniumTest</groupId>
-			<artifactId>test-libraries-for-java</artifactId>
-			<version>1.1.1</version>
-		</dependency>
 	</dependencies>
 	<build>
 		<testSourceDirectory>${basedir}/src/test/java/</testSourceDirectory>
