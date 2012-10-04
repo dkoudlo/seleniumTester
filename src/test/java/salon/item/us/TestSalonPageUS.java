@@ -1,33 +1,29 @@
 package salon.item.us;
 
-import static org.junit.Assert.assertEquals;
-
+import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 
-import project.modules.PageHeaderModule;
-import project.modules.PageContentModule;
+import salon.item.generic.AbstractSalonPage;
 
 import com.google.inject.Inject;
+import com.google.inject.name.Named;
 
-import common.GenericSeleniumTest;
 import data.bundle.TestPropertyBundle;
 
-public class TestSalonPageUS extends GenericSeleniumTest{
+public class TestSalonPageUS extends AbstractSalonPage{
 
-	private TestPropertyBundle properties;
+	@Inject protected WebDriver driver;
 
-	@Inject
-	WebDriver driver;
+	@Override @Inject protected void init(@Named("Salon US") TestPropertyBundle properties) {
+		super.init(properties);
+	}
 
-	PageHeaderModule footer;
-	PageContentModule header;
-	
-	@Inject
-	protected void init(TestPropertyBundle propertiesIn) {
-		this.properties = propertiesIn;
-
+	@Override @Before public void setUp() throws Exception {
+		super.setUp();
+		System.out.println("Setting up "+ this.getClass().getCanonicalName().toString());
 	}
 	
+	@Override @Test public void testContent(){ super.testContent(); }
 	
 }
